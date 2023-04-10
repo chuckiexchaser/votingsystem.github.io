@@ -1,49 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
-
-    <link rel="stylesheet" href="css/home.css">
-    <script defer src="js/home.js"></script>
+   <title>Student Council Voting</title>
+   
+   <link rel="stylesheet" href="css/home.css">
+   <script defer src="js/home.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <img class="h-n-user" src="img/user.png" alt="user">
-            <img class="h-n-logo" src="img/rhs.png" alt="rhs">
-            <img class="h-n-mail" src="img/mail.png" alt="mail">
-        </nav>
-        <h1 class="h-heading">Student Council Voting</h1>
-    </header>
-    <main>
-        <div class="m-card1 card">
-            <h2>Vote with Ease</h2>
+   <header>
+      <nav>
+         <img class="user-logo nav-logo" src="img/user.png" alt="user">
+         <img class="rhs-logo" src="img/rhs.png" alt="rhs">
+         <img class="mail-logo nav-logo" src="img/mail.png" alt="mail">
+      </nav>
+      <h1>Student Council Voting</h1>
+   </header>
+   <main>
+      <div class="headline">
+         <h1> Vote for the future! </h1>
+         <p>Be one of the proud rizalian that vote for the future of the school with the new and improved voting system.</p>
+      </div>
+      <div class="card">
+         <img src="img/simple.png" alt="simple">
+         <h1>Simple</h1>
+         <p>User-friendly UI inside your devices to navigate through each pages with ease! </p>
+      </div>
+      <div class="card">
+         <img src="img/efficiency.png" alt="efficiency">
+         <h1>Efficient</h1>
+         <p>Vote with maximum efficiency, no more ballot to be handed!</p>
+      </div>
+      <div class="card">
+         <img src="img/secure.png" alt="secure">
+         <h1>Secure</h1>
+         <p>No need to be afraid, your data is secure with us so vote confidently!</p>
+      </div>
+      <div class="register-area">
+         <h1>What are you waiting for? Register Now!</h1>
+         <button onclick="showRegisterForm()">Register</button>
+         <div class="form-filter form-hidden">
+            <div class="register-form form-hidden">
+               <h1>Register</h1>
+               <img src="img/exit.png" alt="exit" onclick="hideRegisterForm()">
+               <hr>
+               <form action="#">
+                  <!-- Personal Data -->
+                  <label for="last-name">Last Name:</label>
+                  <input type="text" id="last-name" name="last-name" required>
+                  <br>
+                  <label for="first-name">First Name:</label>
+                  <input type="text" id="first-name" name="first-name" required>
+                  <br>
+                  <label for="middle-name">Middle Name:</label>
+                  <input type="text" id="middle-name" name="middle-name">
+                  <br>
+                  <label for="birth-date">Birth Date:</label>
+                  <input type="date" id="birth-date" name="birth-date" required>
+                  <label for="age">Age:</label>
+                  <input type="age" id="age" name="age" disabled>
+                  <br>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <br>
+                  
+                  <!-- School Data -->
+                  <label for="grade">Grade:</label>
+                  <input type="number" id="grade" name="grade" min="7" max="12" maxlength="2" required>
+                  <br>
+                  <label for="section">Section:</label>
+                  <input type="text" id="section" name="section" required>
+                  <br>
+                  <label for="adviser">Adviser:</label>
+                  <input type="text" id="adviser" name="adviser" required>
+                  <br>
+                  <label for="lrn">LRN:</label>
+                  <input type="number" id="lrn" name="lrn" required>
+                  <br>
 
-            <br>
-
-            <p>No more ballot to be distribute. With this, voting should now be much more efficient and productive than the manual.</p>
-        </div>
-        <div class="m-card2 card">
-            <h2>Vote with Ease</h2>
-
-            <br>
-
-            <p>No more ballot to be distribute. With this, voting should now be much more efficient and productive than the manual.</p>
-        </div>
-        <div class="m-description card">
-            <h2>Rizal High School</h2>
-
-            <br>
-
-            <p>Rizal High School, popularly known as RHS, is a secondary school located in Pasig, Metro Manila, Philippines. The Guinness Book of World Records recognized it as the largest secondary school in the world since 1993, until 2005, when City Montesorri School in Lucknow, claim the title.</p>
-        </div>
-    </main>
-    <footer>
-        Copyright © 2017 Rizal High School. All Rights Reserved
-    </footer>
+                  <!-- Login Data -->
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" required>
+                  <br>
+                  <label for="password">Password:</label>
+                  <input type="number" id="password" name="password" required>
+               </form>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer>
+      <p>@ 2023 Payton, Rizal High School</p>
+   </footer>
 </body>
 </html>
