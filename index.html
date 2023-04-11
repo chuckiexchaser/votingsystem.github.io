@@ -44,49 +44,33 @@
          <button onclick="showRegisterForm()">Register</button>
          <div class="form-filter form-hidden">
             <div class="register-form form-hidden">
-               <h1>Register</h1>
-               <img src="img/exit.png" alt="exit" onclick="hideRegisterForm()">
-               <hr>
+               <div class="form-nav">
+                  <h1>Register</h1>
+                  <img src="img/exit.png" alt="exit" onclick="hideRegisterForm()">
+               </div>
+               <div class="horizontal-line"></div>
                <form action="#">
                   <!-- Personal Data -->
-                  <label for="last-name">Last Name:</label>
-                  <input type="text" id="last-name" name="last-name" required>
-                  <br>
-                  <label for="first-name">First Name:</label>
-                  <input type="text" id="first-name" name="first-name" required>
-                  <br>
-                  <label for="middle-name">Middle Name:</label>
-                  <input type="text" id="middle-name" name="middle-name">
-                  <br>
-                  <label for="birth-date">Birth Date:</label>
-                  <input type="date" id="birth-date" name="birth-date" required>
-                  <label for="age">Age:</label>
-                  <input type="age" id="age" name="age" disabled>
-                  <br>
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-                  <br>
-                  
-                  <!-- School Data -->
-                  <label for="grade">Grade:</label>
-                  <input type="number" id="grade" name="grade" min="7" max="12" maxlength="2" required>
-                  <br>
-                  <label for="section">Section:</label>
-                  <input type="text" id="section" name="section" required>
-                  <br>
-                  <label for="adviser">Adviser:</label>
-                  <input type="text" id="adviser" name="adviser" required>
-                  <br>
-                  <label for="lrn">LRN:</label>
-                  <input type="number" id="lrn" name="lrn" required>
-                  <br>
-
-                  <!-- Login Data -->
-                  <label for="username">Username:</label>
-                  <input type="text" id="username" name="username" required>
-                  <br>
-                  <label for="password">Password:</label>
-                  <input type="number" id="password" name="password" required>
+                  <div class="personal-field">
+                     <label for="last-name">Last Name:</label>
+                     <input type="text" id="last-name" name="last-name" required>
+                     <br>
+                     <label for="first-name">First Name:</label>
+                     <input type="text" id="first-name" name="first-name" required>
+                     <br>
+                     <label for="middle-name">Middle Name:</label>
+                     <input type="text" id="middle-name" name="middle-name">
+                     <br>
+                     <label for="birth-date">Birth Date:</label>
+                     <input type="date" id="birth-date" name="birth-date" required>
+                     <br>
+                     <label for="age">Age:</label>
+                     <input type="number" id="age" name="age" required>
+                     <br>  
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" required>
+                  </div>
+                  <input type="submit">  
                </form>
             </div>
          </div>
