@@ -6,78 +6,76 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <title>Student Council Voting</title>
-   
-   <link rel="stylesheet" href="css/home.css">
-   <script defer src="js/home.js"></script>
+
+   <link rel="stylesheet" href="home.css">
+   <script defer src="home.js"></script>
 </head>
 <body>
-   <header>
-      <nav>
-         <img class="user-logo nav-logo" src="img/user.png" alt="user">
-         <img class="rhs-logo" src="img/rhs.png" alt="rhs">
-         <img class="mail-logo nav-logo" src="img/mail.png" alt="mail">
-      </nav>
-      <h1>Student Council Voting</h1>
-   </header>
    <main>
-      <div class="headline">
-         <h1> Vote for the future! </h1>
-         <p>Be one of the proud rizalian that vote for the future of the school with the new and improved voting system.</p>
-      </div>
-      <div class="card">
-         <img src="img/simple.png" alt="simple">
-         <h1>Simple</h1>
-         <p>User-friendly UI inside your devices to navigate through each pages with ease! </p>
-      </div>
-      <div class="card">
-         <img src="img/efficiency.png" alt="efficiency">
-         <h1>Efficient</h1>
-         <p>Vote with maximum efficiency, no more ballot to be handed!</p>
-      </div>
-      <div class="card">
-         <img src="img/secure.png" alt="secure">
-         <h1>Secure</h1>
-         <p>No need to be afraid, your data is secure with us so vote confidently!</p>
-      </div>
-      <div class="register-area">
-         <h1>What are you waiting for? Register Now!</h1>
-         <button onclick="showRegisterForm()">Register</button>
-         <div class="form-filter form-hidden">
-            <div class="register-form form-hidden">
-               <div class="form-nav">
-                  <h1>Register</h1>
-                  <img src="img/exit.png" alt="exit" onclick="hideRegisterForm()">
-               </div>
-               <div class="horizontal-line"></div>
-               <form action="#">
-                  <!-- Personal Data -->
-                  <div class="personal-field">
-                     <label for="last-name">Last Name:</label>
-                     <input type="text" id="last-name" name="last-name" required>
-                     <br>
-                     <label for="first-name">First Name:</label>
-                     <input type="text" id="first-name" name="first-name" required>
-                     <br>
-                     <label for="middle-name">Middle Name:</label>
-                     <input type="text" id="middle-name" name="middle-name">
-                     <br>
-                     <label for="birth-date">Birth Date:</label>
-                     <input type="date" id="birth-date" name="birth-date" required>
-                     <br>
-                     <label for="age">Age:</label>
-                     <input type="number" id="age" name="age" required>
-                     <br>  
-                     <label for="email">Email:</label>
-                     <input type="email" id="email" name="email" required>
-                  </div>
-                  <input type="submit">  
-               </form>
+      <nav>
+         <div class="logo">
+            <img class="rhs-icon" src="rhs.png" alt="rhs icon">
+         </div>
+         <div class="logo-text">
+            <p>Student</p>
+            <p>Council Voting</p>
+         </div>
+         <div class="menu">
+            <img class="menu-icon" src="menu.png" alt="menu icon" onclick="showMenu()">
+         </div>
+      </nav>
+      <img class="background-image" src="bg.jpg" alt="bg">
+      <section>
+         <div class="tagline">
+            <h1>Your Vote, Your Voice!</h1>
+         </div>
+         <div class="description">
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet dolorem sint molestiae deserunt perferendis dicta earum.
+            
+            <br><br><br>
+
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            
+            nisi veniam placeat vero. Voluptatibus, quo. Ratione provident quasi, tempora ex harum modi.
+         </div>
+         <div class="feature-holder">
+            <div class="features">
+               <img class="feature-icon" src="simple.png" alt="simple">
+               <h1>Simple</h1>
+               <p>User-friendly UI inside your devices to navigate through each pages with ease!</p>
+            </div>
+            <div class="features-reverse">
+               <h1>Efficient</h1>
+               <img class="feature-icon" src="efficiency.png" alt="efficienct">
+               <p>Vote with maximum efficiency, no more ballot to be handed!</p>
+            </div>
+            <div class="features">
+               <img class="feature-icon" src="secure.png" alt="secure">
+               <h1>Secure</h1>
+               <p>No need to be afraid, your data is secure with us so vote confidently!</p>
             </div>
          </div>
+         <div class="register">
+            <h1>
+               Be a voice for change
+               
+               <br>
+
+               Register to vote!
+            </h1>
+            <br>
+            <button>Register</button>
+         </div>
+         <footer>
+            <p>@ 2023 Payton, Rizal High School</p>
+         </footer>
+      </section>
+      <div class="menu-bar menu-hidden" style="overflow-y: hidden;">
+         <div class="dead-zone" onclick="hideMenu()">asd</div>
+         <div class="menu-zone">asd</div>
       </div>
    </main>
-   <footer>
-      <p>@ 2023 Payton, Rizal High School</p>
-   </footer>
 </body>
 </html>
