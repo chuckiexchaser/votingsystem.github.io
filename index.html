@@ -7,24 +7,24 @@
 
    <title>Student Council Voting</title>
 
-   <link rel="stylesheet" href="home.css">
-   <script defer src="home.js"></script>
+   <link rel="stylesheet" href="css/home.css">
+   <script defer src="js/home.js"></script>
 </head>
 <body>
    <main>
       <nav>
          <div class="logo">
-            <img class="rhs-icon" src="rhs.png" alt="rhs icon">
+            <img class="rhs-icon" src="img/rhs.png" alt="rhs icon">
          </div>
          <div class="logo-text">
             <p>Student</p>
             <p>Council Voting</p>
          </div>
          <div class="menu">
-            <img class="menu-icon" src="menu.png" alt="menu icon" onclick="showMenu()">
+            <img class="menu-icon" src="img/menu.png" alt="menu icon" onclick="showSidebar()">
          </div>
       </nav>
-      <img class="background-image" src="bg.jpg" alt="bg">
+      <img class="background-image" src="img/bg.jpg" alt="bg">
       <section>
          <div class="tagline">
             <h1>Your Vote, Your Voice!</h1>
@@ -42,17 +42,17 @@
          </div>
          <div class="feature-holder">
             <div class="features">
-               <img class="feature-icon" src="simple.png" alt="simple">
+               <img class="feature-icon" src="img/simple.png" alt="simple">
                <h1>Simple</h1>
                <p>User-friendly UI inside your devices to navigate through each pages with ease!</p>
             </div>
             <div class="features-reverse">
                <h1>Efficient</h1>
-               <img class="feature-icon" src="efficiency.png" alt="efficienct">
+               <img class="feature-icon" src="img/efficiency.png" alt="efficienct">
                <p>Vote with maximum efficiency, no more ballot to be handed!</p>
             </div>
             <div class="features">
-               <img class="feature-icon" src="secure.png" alt="secure">
+               <img class="feature-icon" src="img/secure.png" alt="secure">
                <h1>Secure</h1>
                <p>No need to be afraid, your data is secure with us so vote confidently!</p>
             </div>
@@ -69,12 +69,42 @@
             <button>Register</button>
          </div>
          <footer>
-            <p>@ 2023 Payton, Rizal High School</p>
+            <div class="info info1">
+               <img src="img/facebook.png" alt="facebook">
+               <h1>Facebook</h1>
+            </div>
+            <div class="info info2">
+               <img src="img/twitter.png" alt="twitter">
+               <h1>Twitter</h1>
+            </div>
+            <div class="info info3">
+               <img src="img/instagram.png" alt="instagram">
+               <h1>Instagram</h1>
+            </div>
          </footer>
+         <div class="idontknow">
+            <p>@ 2023 Payton, Rizal High School</p>
+         </div>
       </section>
-      <div class="menu-bar menu-hidden" style="overflow-y: hidden;">
-         <div class="dead-zone" onclick="hideMenu()">asd</div>
-         <div class="menu-zone">asd</div>
+      <div class="sidebar">
+         <div class="deadzone" onclick="hideSidebar()">&nbsp</div>
+         <div class="menu-panel">
+            <ul>
+               <li class="active">Home</li>
+               <li><a onclick="aboutSelector()">About</a></li>
+               <li class="about about-hidden">
+                  <ul>
+                     <li><a href="#">Devs</a></li>
+                     <li><a href="#">School</a></li>
+                  </ul>
+               </li>
+
+               <br>
+
+               <li><a href="#">Login</a></li>
+               <li><a href="#">Register</a></li>
+            </ul>
+         </div>
       </div>
    </main>
 </body>
