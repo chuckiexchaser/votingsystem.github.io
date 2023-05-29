@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+   box-sizing: border-box;
+
+   margin: 0;
+   padding: 0;
+}
+html {
+   background-color: #24252a;
+   color: #f0f8ff;
+
+   font-family: 'Lato', sans-serif;
+}
+body {
+   scroll-behavior: smooth;
+
+   width: 100vw;
+
+   overflow-x: hidden;
+}
+main {
+   min-height: 100vh;
+
+   font-family: 'Lato', sans-serif;
+   letter-spacing: 3px;
+}
+   nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      height: 10vh;
+   }
+      .logo-text {
+         font-family: 'Alkatra', sans-serif;
+         font-size: 1.5rem;
+
+         margin-left: -3em;
+      }
+      .rhs-icon {
+         height: 4.5em;
+         width: 4.5em;
+
+         margin-left: -1.5em;
+
+      }
+      .menu-icon {
+         height: 3em;
+         width: 3em;
+
+         margin-right: -1.5em;
+      }
+      .background-image {
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+
+         height: 40vh;
+         width: 100%;
+      }
+   
+   section {
+      font-size: 1rem;
+
+      height: 160vh;
+
+      padding-top: 7.5em;
+   }
+      .tagline {
+         font-family: 'Alkatra', sans-serif;
+         font-size: 1.25rem;
+         
+         padding: 0em 1.5em;
+      }
+      .description {
+         margin-bottom: 4.5em;
+         padding: 1.5em 1.5em;
+      }
+   .features {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      align-content: center;
+      align-items: center;
+      gap: 0.5em;
+
+      height: 25vh;
+   }
+      .features img {
+            height: 3rem;
+
+            margin: auto;
+      }
+      .features h1 {
+            font-family: 'Alkatra', cursive;
+            font-size: 2rem;
+
+            margin-left: -0.5em;
+      }
+      .features p {
+            grid-area: 2/1/3/3;
+
+            width: fit-content;
+
+            padding: 1.5em 1.5em 0em;
+      }
+   .features-reverse {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      align-content: center;
+      align-items: center;
+      justify-items: end;
+      gap: 0.5em;
+
+      height: 25vh;
+   }
+      .features-reverse img {
+            height: 3rem;
+
+            margin: auto;
+      }
+      .features-reverse h1 {
+            font-family: 'Alkatra', cursive;
+            font-size: 2rem;
+
+            margin-right: -0.5em;
+      }
+      .features-reverse p {
+            grid-area: 2/1/3/3;
+
+            padding: 0em 1.5em;
+      }
+   .register {
+      font-family: 'Alkatra', cursive;
+      text-align: center;
+
+      padding: 1.5em;
+   }
+      button {
+         height: 2em;
+         width: 6em;
+
+         font-family: 'Lato' ,sans-serif;
+         font-size: 2rem;
+      }
+      .sidebar {
+         display: grid;
+         grid-template-columns: 1fr 3fr;
+
+         width: 100vw;
+
+         position: absolute;
+         top: -1000px;
+         right: 0px;
+
+         opacity: 0;
+
+         transition: 1s all;
+      }
+      .showSide {
+         opacity: 1;
+
+         top: 0px;
+      }
+      .hideShow {
+         opacity: 0;
+
+         top: -1000px;
+      }
+         .deadzone {
+            backdrop-filter: blur(5px);
+
+            height: 100vh;
+         }
+         .menu-panel {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            background-color: #484d54;
+
+            height: 100vh;
+
+            font-size: 3rem;
+         }
+      .about {
+         transition: 1s all;
+
+         transform-origin: top;
+      }
+      .about-hidden {
+         transform: scaleY(0);
+      }
+      .about-visible {
+         transform: scaleY(1);
+      }
+      
+      ul {
+         list-style: none;
+      }
+      li {
+         margin: 0.5em 0em;
+      }
+      a {
+         color: #f0f8ff;
+      }
+      a:link {
+         text-decoration: none;
+      }
+      a:visited {
+         text-decoration: none;
+      }
+      li.active {
+         color: #59b2ff;
+      }
+   footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-content: space-evenly;
+      justify-items: center;
+         
+      background:#f0f8ff;
+   
+      height: 20vh;
+
+      margin-top: 4em;
+   
+      color: #24252a;
+   }
+      .info {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         font-size: 0.90rem;
+      }
+      .info > img {
+         height: 3em;
+         width: 3em;
+
+         margin-bottom: 1em;
+      }
+   .idontknow {
+      background:#f0f8ff;
+
+      font-size: 1.25rem;
+      color: #24252a;
+   }
