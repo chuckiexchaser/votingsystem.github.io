@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+   box-sizing: border-box;
+
+   margin: 0;
+   padding: 0;
+}
+html {
+   background-color: #24252a;
+   color: #f0f8ff;
+
+   font-family: 'Lato', sans-serif;
+   
+}
+main {
+   height: 100vh;
+}
+   .background > img {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      height: 30vh;
+      width: 100%;
+
+      clip-path: ellipse(70% 100% at 50% 0%);
+   }
+   .background > h1 {
+      transform: translateY(-55%);
+
+      font-family: 'Alkatra', sans-serif;
+      font-size: 5rem;
+      letter-spacing: 10px;
+
+      text-align: center;
+   }
+      form {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         height: 40vh;
+      }
+         .text {
+            background-color: #24252a;
+            
+            border-radius: 5em;
+            border: 1px solid #f0f8ff;
+
+            height: 3em;
+
+            color: #f0f8ff;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+
+            margin: 0.75em 0em;
+            padding: 0em 1.5em;
+         }
+         .remember-area {
+            position: relative;
+            right: 65px;
+         }
+            .remember-box {
+               height: 2em;
+               width: 2em;
+
+               margin: 0.75em 1em 0em;
+            }
+            label {
+               position: inherit;
+               bottom: 7.5px;
+               font-size: 1.25rem;
+            }
+         button {
+            position: relative;
+            top: 50px;
+
+            height: 2em;
+            width: 5em;
+
+            font-size: 2rem;
+         }
