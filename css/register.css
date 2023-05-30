@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
 * {
    box-sizing: border-box;
 
@@ -19,8 +25,20 @@ main {
    min-height: 100vh;
 }
    .header {
-      margin: 1em 0em 1em;
+      padding: 1em;
+
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 3px;
+      text-align: center;
    }
+      .header > h1 {
+         font-family: 'Alkatra', sans-serif;
+         font-size: 3em;
+         letter-spacing: 5px;
+      }
+      .header > p {
+         font-size: 1.25em;
+      }
    form {
       display: flex;
       flex-direction: column;
@@ -56,24 +74,95 @@ main {
          border-radius: 5em;
          border: 1px solid #f0f8ff;
 
-         height: 2em;
-         width: 20em;
+         height: 2.25em;
+         width: 19em;
 
          color: #f0f8ff;
          font-family: 'Lato', sans-serif;
          font-size: 1rem;
          letter-spacing: 1px;
 
-         margin: 0.25em 0em;
+         margin: 0.55em 0em;
          padding: 0em 1em;
       }
          .lname {
-            width: 10em;
+            width: 8em;
          }
          .fname {
-            width: 10em;
+            width: 8em;
          }
          .minitial {
             width: 3em;
             padding: 0em 0.5em;
          }
+         .address {
+            width: 19em;
+         }
+         .birthdate {
+            width: 13em;
+
+            text-align: center;
+         }
+         .age {
+            width: 6em;
+
+            text-align: center;
+         }
+         .gender-area {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            width: 23em;
+
+            margin: 0.5em 0em;
+
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 1px;
+         }
+         .grade-level {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            width: 100vw;
+
+            margin: 0.5em 0em;
+
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 1px;
+         }
+            .dropbox {
+               background-color: #24252a;
+               border-radius: 1em;
+               border: 1px solid #f0f8ff;
+
+               transform: translateY(5%);
+
+               height: 2.25em;
+               width: 5em;
+
+               color: #f0f8ff;
+               text-align: center;
+            }
+         .lrn {
+            width: 19em;
+         }
+      .creator > h2  {
+         width: 9em;
+      }
+      .btn {
+         border-radius: 20em;
+         border: 5px solid #f0f8ff;
+
+         height: 2em;
+         width: 6em;
+
+         margin: 1em 0em;
+
+         font-family: 'Lato', sans-serif;
+         font-size: 1.5rem;
+         letter-spacing: 3px;
+      }

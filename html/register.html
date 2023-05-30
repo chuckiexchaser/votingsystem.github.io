@@ -25,19 +25,54 @@
             <input class="text fname" type="text" name="first-name" id="first-name" placeholder="First Name*" required>
             <input class="text minitial" type="text" name="middle-initial" id="middle-initial" placeholder="M.I">
          </div>
-         
 
-         <label class="gender" for="gender">Gender: </label>
-         <label for="gender">
-            <input type="radio" name="gender" id="gender" required> Male
-         </label>
-         <label for="gender">
-            <input type="radio" name="gender" id="gender" required> Female
-         </label>
-         
-         <input class="text" type="text" name="address" id="address" placeholder="Address*" required>
+         <input class="text address" type="text" name="address" id="address" placeholder="Address*" required>
 
-         <button>asd</button>
+         <div class="birth-age">
+            <input class="text birthdate" type="date">
+
+            <input class="text age" type="text" placeholder="Age*">
+         </div>
+
+         <div class="gender-area">
+            <label class="gender" for="gender">Gender: </label>
+            <label for="gender">
+               <input type="radio" name="gender" id="gender" required> Male
+            </label>
+            <label for="gender">
+               <input type="radio" name="gender" id="gender" required> Female
+            </label>
+         </div>
+
+         <div class="separators">
+            <hr>
+            <h2>School Info</h2>
+         </div>
+
+         <input class="text lrn" type="text" name="last-name" id="last-name" placeholder="LRN*" required>
+
+         <div class="grade-level">
+            <label for="grade">Grade Level: </label>
+            <select class="dropbox" name="grade" id="grade">
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12">12</option>
+            </select>
+         </div>
+
+         <div class="separators creator">
+            <hr>
+            <h2>Account Creation</h2>
+         </div>
+
+         <input class="text email" type="email" name="email" id="email" placeholder="Email*" required>
+         <input class="text password" type="password" name="password" id="password" placeholder="Password*" required>
+         <input class="text c-password" type="password" name="c-password" id="c-password" placeholder="Confirm Password">
+
+         <input class="btn" type="submit">
 
       </form>
    </main>
