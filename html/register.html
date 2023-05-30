@@ -8,6 +8,7 @@
    <title>Register</title>
 
    <link rel="stylesheet" href="../css/register.css">
+   <script defer src="../js/register.js"></script>
 </head>
 <body>
    <main>
@@ -15,14 +16,16 @@
          <h1>Register</h1>
          <p>Please fill out the form below</p>
       </div>
-      <form action="#">
+      <form action="#" onsubmit="return passwordVerification()">
          <div class="separators">
             <hr>
             <h2>Personal Info</h2>
          </div>
          <div class="full-name">
             <input class="text lname" type="text" name="last-name" id="last-name" placeholder="Last Name*" required>
+
             <input class="text fname" type="text" name="first-name" id="first-name" placeholder="First Name*" required>
+
             <input class="text minitial" type="text" name="middle-initial" id="middle-initial" placeholder="M.I">
          </div>
 
@@ -33,6 +36,17 @@
 
             <input class="text age" type="text" placeholder="Age*">
          </div>
+
+         <input class="text number" type="number" name="number" id="number" placeholder="Mobile Number*"
+         
+         oninput=
+         
+         "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+
+         type = "number"
+         maxlength = "11"
+    
+         required>
 
          <div class="gender-area">
             <label class="gender" for="gender">Gender: </label>
@@ -69,10 +83,35 @@
          </div>
 
          <input class="text email" type="email" name="email" id="email" placeholder="Email*" required>
-         <input class="text password" type="password" name="password" id="password" placeholder="Password*" required>
-         <input class="text c-password" type="password" name="c-password" id="c-password" placeholder="Confirm Password">
 
-         <input class="btn" type="submit">
+         <span class="email-verif">
+            Email will be required for the student verification
+
+            <br><br>
+
+            Upon register, the system will provide a link to the said email and student will need to activate it in order to continue into registration
+         </span>
+
+         <input class="text password" type="password" name="password" id="password" placeholder="Password*">
+         <input class="text c-password" type="password" name="c-password" id="c-password" placeholder="Confirm Password*">
+
+         <div class="pass-verif">
+            <span id="verif-1">
+               Password can contain letters, numbers and special characters
+            </span>
+            <span id="verif-2">
+               Password must contain atleast 8 characters
+            </span>
+            <span id="verif-3">
+               Password must be less than 16 characters
+            </span>
+            <span id="verif-4">
+               Password and Confirm Password must be the same
+            </span>
+         </div>
+         
+
+         <input class="btn" type="submit" value="Submit">
 
       </form>
    </main>
